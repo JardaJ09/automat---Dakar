@@ -27,6 +27,7 @@ namespace Dakar
         public int prvniHotovo;
         bool stop = false;
         int pocetBodu = 0;
+        int kola;
         private async void button1_Click(object sender, EventArgs e)
         {
             Random dice = new Random();
@@ -72,7 +73,8 @@ namespace Dakar
             prvniHotovo = prvniHotovo + 1;
             if (prvniHotovo == 3)
             {
-                label11.Text = label11.Text + 1;
+                kola = kola + 1;
+                label11.Text = kola.ToString();
                 if (label1.Text == label2.Text)
                 {
                     pocetBodu = pocetBodu + 10;
@@ -214,7 +216,7 @@ namespace Dakar
 
         private void label11_Click(object sender, EventArgs e)
         {
-
+            label11.Text = kola.ToString();
         }
     }
 }
