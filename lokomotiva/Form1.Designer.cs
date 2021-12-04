@@ -1,4 +1,4 @@
-﻿namespace Dakar
+﻿namespace lokomotiva
 {
     partial class Form1
     {
@@ -115,7 +115,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "0";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // label4
             // 
@@ -142,7 +141,6 @@
             this.label5.Size = new System.Drawing.Size(89, 37);
             this.label5.TabIndex = 7;
             this.label5.Text = "Body";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // trackBar1
             // 
@@ -180,7 +178,6 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Obtížnost rychlosti:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button3
             // 
@@ -304,7 +301,6 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Počet odechraný kol:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 

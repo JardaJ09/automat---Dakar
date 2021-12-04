@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Dakar
+namespace lokomotiva
 {
     public partial class Form1 : Form
     {
@@ -124,7 +124,7 @@ namespace Dakar
         int kolo = 0;
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            kolo = trackBar1.Value; 
+            kolo = trackBar1.Value;
             kolo = kolo * 100;
             label6.Text = kolo.ToString();
         }
@@ -211,7 +211,7 @@ namespace Dakar
             label1.Text = 0.ToString();
             label2.Text = 0.ToString();
             label3.Text = 0.ToString();
-            
+
         }
 
         private void label11_Click(object sender, EventArgs e)
