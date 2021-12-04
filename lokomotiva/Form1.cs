@@ -157,7 +157,7 @@ namespace lokomotiva
             kolo = 100;
             PřevedeníNačáru1();
         }
-        int NastaveníRychlosti = 0;
+        int NastaveníRychlosti = 100;
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             NastaveníRychlosti = trackBar2.Value;

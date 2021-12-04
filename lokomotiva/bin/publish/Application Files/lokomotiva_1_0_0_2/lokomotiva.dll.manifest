@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="lokomotiva.exe" version="1.0.0.2" publicKeyToken="2abc42cf6003fe60" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Možnosti manifestu UAC
+          Chcete-li změnit úroveň řízení uživatelských účtů v systému Windows, nahraďte 
+          uzel requestedExecutionLevel jedním z následujících.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Chcete-li využít virtualizaci souborů a registru pro zpětnou 
+         kompatibilitu, odstraňte uzel requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="15256">
+      <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cQwHj7fEks7q+p9d8yytXnCvpff7JwR8aYNh3z2vCmE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="lokomotiva.deps.json" size="422">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1q6FZopNE6L95bIJR5PbafgxdNZU39To4CYQEPHqRWg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lokomotiva.dll" size="16792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A+1yI2vRAtCoOfQMhUgCDGxXyE85y9dtO3do+P/Y6tI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lokomotiva.exe" size="149912">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BFDNbMdiisoeLC8j8LLctlz4qLieCjo0JhsXrUwDFAY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lokomotiva.runtimeconfig.json" size="372">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HsoPDHAHCqg7tgnkt0mybctECXhDJgMnJjlHIiJKCYo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=HOME\jara" issuerKeyHash="e7d4c04428ffc33929e6bde7ec11c6805ffda565" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TLJ91zMdIhmN92itHhhm0KNDzsaOxvTqJuxT8JAXxd0=</DigestValue></Reference></SignedInfo><SignatureValue>ZTzG1ZGFxrNXYNai+4Xy+e/WB6lM7qoRNC0VZ2MtzVlrOFakPsEols/hafDwOe0dfXBJhCRKPMwOIDpBqDRFzFfuoXmhQ9TyLR9rVDaKsu3gjGpISwcYxGvSQumOv3kvHL6RhQcV/iKigUsbu+zI/cou9PpMO7DzEPo9S0H5VUo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tRXnDmn95Wvcrl++ru4QByWOeuK91M+0qlA9MiKmaqb1KrR2OYgABsB15LU2iiMCyWXAk2GMwLQteVOVLxf88KqjD7mIKC//Q63BnqNbAGEKcSHhzh2RFEjT6VeR1cR6+Pp9FUPgYSuvtIEpqHpGHRKASgENAruX9oaxVtf73uk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ddc51790f053ec26eaf4c68ec6ce43a3d066181ead68f78d19221d33d77db24c" Description="" Url=""><as:assemblyIdentity name="lokomotiva.exe" version="1.0.0.2" publicKeyToken="2abc42cf6003fe60" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HOME\jara</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Jopz6vHDBYhfgLmVKGHxiP8gbUe0RBw+QSN+a96vD6E=</DigestValue></Reference></SignedInfo><SignatureValue>caN/7GdKZOgCqoEsOkYDfwzwtXwPxssuvoAsKCiQh3FxFWYFL6XVBhiFH5D+LZmYbb6nLubH0VCVlvoR7Yq9DjZnPXlYmoLtnlyHvDtB2A87tdbEdSCVcE/VeWFRQttbaD28KDnwVgrFnuvLjiaU0seeB65/xqXRBZA/3TmcY8E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tRXnDmn95Wvcrl++ru4QByWOeuK91M+0qlA9MiKmaqb1KrR2OYgABsB15LU2iiMCyWXAk2GMwLQteVOVLxf88KqjD7mIKC//Q63BnqNbAGEKcSHhzh2RFEjT6VeR1cR6+Pp9FUPgYSuvtIEpqHpGHRKASgENAruX9oaxVtf73uk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASagAwIBAgIQcgeY90JJwKFNutYl+O7AazANBgkqhkiG9w0BAQsFADAdMRswGQYDVQQDHhIASABPAE0ARQBcAGoAYQByAGEwHhcNMjExMjA0MTc1MTI0WhcNMjIxMjA0MjM1MTI0WjAdMRswGQYDVQQDHhIASABPAE0ARQBcAGoAYQByAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALUV5w5p/eVr3K5fvq7uEAcljnrivdTPtKpQPTIipmqm9Sq0djmIAAbAdeS1NoojAsllwJNhjMC0LXlTlS8X/PCqow+5iCgv/0OtwZ6jWwBhCnEh4c4dkRRI0+lXkdXEevj6fRVD4GErr7SBKah6Rh0SgEoBDQK7l/aGsVbX+97pAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAEIfUadg03qaaQFMBHljsqyTC8xNARyTE8oPaEBumVrt2IIv1j0FLizD28oN9e46TxQbEsaMiPNlFyB9Fxrfscg/xM5UrJPx9aVFTQoC1SepGeXT45PJbuIi7w3mjE2hHZxSGarN2LZ+UqZwd8OXodnQFzqtafRCeI83xOe1RmdU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
